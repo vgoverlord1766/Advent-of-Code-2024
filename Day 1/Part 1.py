@@ -6,15 +6,12 @@ list_two = []
 total_distance = 0
 
 for line in data:
-    print(line.split(" "))
-    list_one.append(int(line.split(" ")[0]))
-    list_two.append(int(line.split(" ")[3]))
+    list_one.append(int(line.split("  ")[0]))
+    list_two.append(int(line.split("  ")[1]))
 
 list_one.sort()
 list_two.sort()
 
-print(list_one)
-print(list_two)
 
 for i in range(len(list_one)):
     print(list_two[i] - list_one[i])
